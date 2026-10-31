@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:maltboxd_app/localization/app_localizations.dart';
 import 'package:maltboxd_app/classes/auth/auth_gate.dart';
 import 'classes/helpers/theme_manager.dart';
 
@@ -19,6 +20,8 @@ class MaltboxdApp extends StatelessWidget {
         return MaterialApp(
           title: 'Maltboxd',
           debugShowCheckedModeBanner: false,
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
+            supportedLocales: AppLocalizations.supportedLocales,
           themeMode: mode,
           theme: buildLightTheme(),
           darkTheme: buildDarkTheme(),
