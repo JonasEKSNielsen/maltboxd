@@ -1,5 +1,5 @@
 name: maltboxd_app
-description: "A new Flutter project."
+description: "Maltboxd app. An app for reviewing and tracking beers"
 publish_to: 'none'
 version: 0.1.0+1
 
@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^11.2.0
 
 dev_dependencies:
   flutter_test:
